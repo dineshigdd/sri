@@ -1,5 +1,5 @@
 <?php
-
+// the page.php file is not mandatory to create a basic theme. If this file is not present, your pages will simply use the index.php
 get_header();
 
 if ( have_posts() ) :

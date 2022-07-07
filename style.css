@@ -90,3 +90,16 @@ article.post:last-of-type {
 .page-layout h2 {
     font-size: 200%;
 }
+
+/*styles for custom template */
+.tdcontent {
+    border: dashed 3px #ffd35e;
+    background: #fdf5e1;
+    padding: 10px;
+}
+
+.tdtitle {
+    border: dashed 3px #2ecc71;
+    background: #d7fee8;
+    padding: 10px;
+}
