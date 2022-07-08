@@ -79,7 +79,9 @@ article.post:last-of-type {
 
 
 .navigation-menu ul li.current-menu-item a:link,     /* target the Active State of a menu item*/
-.navigation-menu ul li.current-menu-item a:visited {
+.navigation-menu ul li.current-menu-item a:visited, 
+.navigation-menu ul li.current-page-ancestor a:link, /*when clicking on child links */
+.navigation-menu ul li.current-page-ancestor a:visited {
     background-color: #4285f4;
     color: #ffffff;
 }
@@ -102,4 +104,36 @@ article.post:last-of-type {
     border: dashed 3px #2ecc71;
     background: #d7fee8;
     padding: 10px;
+}
+
+/* Applying Style To The Active Children Links */
+.child-navigation-menu ul {
+    margin: 20px;
+    padding: 0;
+}
+
+.child-navigation-menu ul:before, .navigation-menu ul:after {
+    content: "";
+    display: table;
+}
+
+.child-navigation-menu ul li {
+    list-style: none;
+    float: left;
+    margin-right: 3px;
+}
+
+.child-navigation-menu ul li {
+    margin-right: 20px;
+    font-size:80%;
+}
+
+.child-navigation-menu ul li a:link,
+.child-navigation-menu ul li a:visited {
+    text-decoration: none;
+}
+
+.child-navigation-menu ul li.current_page_item a:link,
+.child-navigation-menu ul li.current_page_item a:visited {
+    border-bottom: solid 3px #ecf0f1;
 }
