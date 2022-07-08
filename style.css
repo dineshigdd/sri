@@ -137,3 +137,13 @@ article.post:last-of-type {
 .child-navigation-menu ul li.current_page_item a:visited {
     border-bottom: solid 3px #ecf0f1;
 }
+
+/* Adding style to the post meta */
+.post-meta {
+    font-size: 90%;
+    color: #888;
+}
+
+p.post-meta a:link, p.post-meta a:visited {
+    color:#888;
+}
