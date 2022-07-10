@@ -23,3 +23,10 @@ function get_the_top_ancestor_id() {
 		return $post->ID;
 	}
 }
+
+/*sets the excerpt length */
+function customize_the_excerpt_length() {
+	return 5;
+}
+
+add_filter('excerpt_length','customize_the_excerpt_length');
