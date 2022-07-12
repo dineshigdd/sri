@@ -147,3 +147,15 @@ article.post:last-of-type {
 p.post-meta a:link, p.post-meta a:visited {
     color:#888;
 }
+
+/*styles for post thumbnails */
+
+.small-thumbnail {
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+.single-post-image {
+    float: left;
+    margin: 0px 12px 12px 0px;
+}

@@ -30,3 +30,15 @@ function customize_the_excerpt_length() {
 }
 
 add_filter('excerpt_length','customize_the_excerpt_length');
+
+
+/* Add featured Image support */
+function add_featured_image_support_to_theme() {
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'small-thumbnail', 100, 100, true );
+	add_image_size( 'single-post-image', 250, 250, true );
+
+}
+
+add_action( 'after_setup_theme', 'add_featured_image_support_to_theme');
+
