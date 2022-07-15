@@ -8,7 +8,7 @@ if ( have_posts() ) {
 	<?php
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'theposts' );
+		get_template_part( 'theposts' , get_post_format() );
 	}
 } else {
 	echo '<p>No search results found!</p>';
