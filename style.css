@@ -86,7 +86,25 @@ article.post:last-of-type {
     color: #ffffff;
 }
 
-/* end of style for nave menu */
+/*styling for main-content area, sidebar, main-column to hold widgets */
+.main-column {
+    width:70%;
+    float: left;
+}
+
+.sidebar-column {
+    width: 30%;
+    float: right;
+}
+
+.main-content { 
+    overflow: auto;
+}
+/* why overflow: auto 
+ Note that the parent div needs the css property of overflow: auto in order for this all to work properly. 
+ Otherwise, the parent div will not automatically expand, or grow it’s height, to contain the two child divs
+ */
+
 
 /* styling for page */
 .page-layout h2 {
