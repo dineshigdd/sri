@@ -223,3 +223,18 @@ p.post-meta a:link, p.post-meta a:visited {
     padding: 25px;
     text-align: center;
 }
+
+/* styles for homepage on front-page.php */
+.home-columns {
+    overflow: auto;
+}
+
+.home-left {
+    width: 45%;
+    float: left;
+}
+
+.home-right {
+    width: 45%;
+    float: right;
+}
