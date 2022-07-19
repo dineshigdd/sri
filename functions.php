@@ -70,3 +70,7 @@ function initialize_widgets(){
 }
 
 add_action( 'widgets_init', 'initialize_widgets');
+
+
+// enable this new archives-page-functions.php
+require get_template_directory() . '/archives-page-functions.php';

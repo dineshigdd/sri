@@ -1,6 +1,5 @@
 <?php
-
-/** Template Name: Custom Page Template **/
+/* Template Name: custom page template */
 
 get_header();
 

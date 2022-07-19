@@ -1,5 +1,6 @@
 <?php
-// the page.php file is not mandatory to create a basic theme. If this file is not present, your pages will simply use the index.php
+/* Template Name: Archive Page Custom */
+
 get_header();
 
 if ( have_posts() ) :
@@ -19,11 +20,7 @@ if ( have_posts() ) :
 				</ul>
 			</nav>
             <h2><?php the_title() ?></h2>
-			<?php 
-			   get_template_part( 'content' , 'page'  );
-			// the_content() 
-			
-			?>
+			<?php get_template_part( 'content', 'tmpl_archives' ); ?>
         </article>
 	
 	<?php endwhile;
